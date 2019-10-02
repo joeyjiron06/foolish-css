@@ -1,6 +1,6 @@
 {
   "name": "foolish-css",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A super lightweight css framework with no classes",
   "main": "index.css",
   "scripts": {
