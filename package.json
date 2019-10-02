@@ -1,0 +1,28 @@
+{
+  "name": "foolish-css",
+  "version": "1.0.0-beta.1",
+  "description": "A super lightweight css framework with no classes",
+  "main": "index.css",
+  "scripts": {
+    "build": "cleancss -o index.min.css index.css",
+    "deploy": "npm build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeyjiron06/foolish-css.git"
+  },
+  "keywords": [
+    "css",
+    "lightweight",
+    "classless"
+  ],
+  "author": "joeyjiron06",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeyjiron06/foolish-css/issues"
+  },
+  "homepage": "https://github.com/joeyjiron06/foolish-css#readme",
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0"
+  }
+}
