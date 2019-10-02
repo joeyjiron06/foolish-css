@@ -41,3 +41,11 @@ Look at [default-theme.css](./default-theme.css)
 </style>
 <link href="TODO:fillMeIn" />
 ```
+
+## Publishing
+
+```bash
+npm version YOUR_VERSION_HERE
+git push origin master --follow-tags
+npm run deploy
+```
