@@ -7,12 +7,19 @@ A simple very lightweight css framework with no classes. Instead you just use ra
 ## Usage
 
 ```html
-<link href="TODO:fillMeIn" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/foolish-css@latest/default-theme.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/foolish-css@latest/index.min.css"
+/>
 ```
 
 ## Custom Theme
 
-Look at [default-theme.css](./default-theme.css)
+Look at [default-theme.css](./default-theme.css) for all values that you must provide.
 
 ```html
 <style>
@@ -39,7 +46,11 @@ Look at [default-theme.css](./default-theme.css)
     --border-radius: 6px;
   }
 </style>
-<link href="TODO:fillMeIn" />
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/foolish-css@latest/index.min.css"
+/>
 ```
 
 ## Publishing
