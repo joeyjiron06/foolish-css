@@ -151,10 +151,13 @@ nav {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding: var(--padding-3);
   background-color: var(--color-primary);
   color: var(--color-white);
   position: relative;
+}
+
+nav h1 {
+  padding: var(--padding-3);
 }
 
 section a {
