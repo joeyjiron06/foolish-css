@@ -16,6 +16,8 @@ Screenshot
 
 ## Usage
 
+Import the css
+
 ```html
 <link
   rel="stylesheet"
@@ -25,6 +27,13 @@ Screenshot
   rel="stylesheet"
   href="https://unpkg.com/foolish-css@latest/index.min.css"
 />
+```
+
+Use the styles
+
+```html
+<button primary>Press Me!</button>
+<input type="checkbox">Check!</input>
 ```
 
 ## Custom Theme
