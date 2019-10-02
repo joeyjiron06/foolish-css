@@ -5,7 +5,7 @@
   "main": "index.css",
   "scripts": {
     "build": "cleancss -o index.min.css index.css",
-    "deploy": "npm build && npm publish"
+    "deploy": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
