@@ -1,6 +1,6 @@
 # Foolish CSS BETA
 
-Inspired by [Bare.css](http://barecss.com/)
+Inspired by [Bare.css](https://github.com/ericclemmons/bare-css)
 
 A simple very lightweight css framework with no classes. Instead you just use raw html elements like `<button>`, `<input>`, `<h1>`, `<p>`, etc. This is meant for very lightweight purposes to just get some basic styling of common used html elements. If you want something with more bells and whistles then use something like bootstrap.
 
