@@ -1,18 +1,44 @@
 # Foolish CSS BETA
 
-Inspired by [Bare.css](http://barecss.com/)
+Inspired by [Bare.css](https://github.com/ericclemmons/bare-css)
 
 A simple very lightweight css framework with no classes. Instead you just use raw html elements like `<button>`, `<input>`, `<h1>`, `<p>`, etc. This is meant for very lightweight purposes to just get some basic styling of common used html elements. If you want something with more bells and whistles then use something like bootstrap.
 
+## Demo
+
+You can find the demo here:
+
+https://joeyjiron06.github.io/foolish-css/
+
+Screenshot
+
+![demo screenshot](./demo.png)
+
 ## Usage
 
+Import the css
+
 ```html
-<link href="TODO:fillMeIn" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/foolish-css@latest/default-theme.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/foolish-css@latest/index.min.css"
+/>
+```
+
+Use the styles
+
+```html
+<button primary>Press Me!</button>
+<input type="checkbox">Check!</input>
 ```
 
 ## Custom Theme
 
-Look at [default-theme.css](./default-theme.css)
+Look at [default-theme.css](./default-theme.css) for all values that you must provide.
 
 ```html
 <style>
@@ -39,7 +65,11 @@ Look at [default-theme.css](./default-theme.css)
     --border-radius: 6px;
   }
 </style>
-<link href="TODO:fillMeIn" />
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/foolish-css@latest/index.min.css"
+/>
 ```
 
 ## Publishing
