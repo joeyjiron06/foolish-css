@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Foolish CSS Demo</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="./default-theme.css" id="theme" />
+  <link rel="stylesheet" href="./index.css" />
+
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-family: 'Work Sans', sans-serif;
+      text-align: center;
+    }
+
+    .darkTheme {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
+  <section>
+    <h1>Foolish CSS Demo</h1>
+    <p>
+      Below is a demo of the css framework that uses no classes. Go ahead and
+      inspect this html.
+    </p>
+
+    <div class="darkTheme">
+      <input type="checkbox" toggle id="darkmodeCheckbox" />
+      <span>Dark Mode</span>
+    </div>
+
+  </section>
+
+  <section>
+    <h1>Buttons</h1>
+
+    <button>Default</button>
+    <button disabled>Disabled</button>
+    <button primary>Primary</button>
+    <input type="button" value="Button Input" />
+    <input type="submit" value="Submit Input" />
+
+    <input type="button" value="Button Input Primary" primary />
+    <input type="submit" value="Submit Input Primary" primary />
+  </section>
+
+  <section>
+    <h1>Inputs</h1>
+
+    <fieldset>
+      <input type="text" required />
+      <label>Username</label>
+    </fieldset>
+
+    <fieldset>
+      <input type="password" required />
+      <label>Password</label>
+    </fieldset>
+
+    <fieldset>
+      <input type="text" />
+      <label>Input not required</label>
+    </fieldset>
+  </section>
+
+  <section>
+    <h1>Checkbox</h1>
+
+    <fieldset>
+      <input type="checkbox" id="unchecked" />
+      <label for="unchecked">unchecked</label>
+    </fieldset>
+
+    <fieldset>
+      <input type="checkbox" id="checked" checked />
+      <label for="checked">checked</label>
+    </fieldset>
+
+    <fieldset>
+      <input type="checkbox" id="checked-disabled" disabled />
+      <label for="checked-disabled">unchecked disabled</label>
+    </fieldset>
+
+    <fieldset>
+      <input type="checkbox" id="checked-disabled" checked disabled />
+      <label for="checked-disabled">checked disabled</label>
+    </fieldset>
+  </section>
+
+  <section>
+    <h1>Nav</h1>
+
+    <nav>
+      <h1>App</h1>
+      <section>
+        <a href="/html/">HTML</a>
+        <a href="/css/">CSS</a>
+        <a href="/js/">JavaScript</a>
+        <a href="/jquery/">jQuery</a>
+      </section>
+    </nav>
+  </section>
+
+  <section>
+    <h1>Footer</h1>
+
+    <footer>
+      <section>
+        <a href="/html/">About Us</a>
+        <a href="/css/">Terms & Conditions</a>
+        <a href="/js/">Contact Us</a>
+      </section>
+    </footer>
+  </section>
+
+  <section>
+    <h1>Headings</h1>
+
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+  </section>
+
+  <section>
+    <h1>Paragraphs</h1>
+
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only five
+      centuries, but also the leap into electronic typesetting, remaining
+      essentially unchanged. It was popularised in the 1960s with the release
+      of Letraset sheets containing Lorem Ipsum passages, and more recently
+      with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.
+    </p>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as
+      necessary, making this the first true generator on the Internet. It uses
+      a dictionary of over 200 Latin words, combined with a handful of model
+      sentence structures, to generate Lorem Ipsum which looks reasonable. The
+      generated Lorem Ipsum is therefore always free from repetition, injected
+      humour, or non-characteristic words etc.
+    </p>
+  </section>
+
+  <script>
+    (function () {
+      function init() {
+        const $darkMode = document.getElementById('darkmodeCheckbox');
+        const $theme = document.getElementById('theme');
+
+
+        $darkMode.onclick = () => {
+          if ($theme.href.endsWith('default-theme.css')) {
+            $theme.href = './dark-theme.css';
+          } else {
+            $theme.href = './default-theme.css';
+          }
+        };
+      }
+
+      init();
+    }());
+  </script>
+</body>
+
+</html>

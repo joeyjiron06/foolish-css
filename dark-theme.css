@@ -3,8 +3,8 @@
   --color-grey: grey;
   --color-white: white;
   --color-black: black;
-  --color-bg: white;
-  --color-text-color: black;
+  --color-bg: #212121;
+  --color-text-color: white;
 
   --padding-1: 4px;
   --padding-2: 6px;
@@ -21,4 +21,9 @@
   --margin-5: 20px;
 
   --border-radius: 6px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-color);
 }
